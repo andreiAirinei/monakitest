@@ -1,5 +1,5 @@
 import React from 'react';
-import './showcase.style.scss';
+import './showcase.styles.scss';
 
 const Showcase = () => {
   return (

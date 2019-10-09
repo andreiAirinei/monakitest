@@ -4,8 +4,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* navbar shadow does not work with overflow hidden */
-  overflow: hidden;
 }
 
 body {
@@ -37,6 +35,6 @@ ul li {
 .container {
   max-width: 1600px !important;
   margin: 0 auto;
-  overflow: auto;
+  /* overflow: auto; */
   padding: 0 20px;
 }
