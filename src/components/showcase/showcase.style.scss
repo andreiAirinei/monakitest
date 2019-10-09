@@ -1,0 +1,55 @@
+.showcase-wrapper {
+  width: 100vw;
+  height: auto;
+  position: relative;
+  justify-items: center;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .showcase-content {
+    position: absolute;
+    width: 100%;
+    top: 40%;
+    text-align: right;
+    color: #fff;
+
+    .showcase-title,
+    .showcase-body {
+      display: block;
+    }
+
+    .showcase-title {
+      margin-bottom: 11.5px;
+      font-size: 23px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      line-height: 32.2px;
+    }
+
+    .showcase-body {
+      margin-bottom: 13.5px;
+      font-size: 27px;
+      font-weight: 500;
+      line-height: 37.8px;
+    }
+
+    .shop-now-btn {
+      display: inline-block;
+      color: #fff;
+      font-weight: 600;
+      font-size: 13px;
+      background: #140f3c;
+      padding: 12px 20px;
+      border: 1px solid #fff;
+      letter-spacing: 1.3px;
+
+      &:hover {
+        background: #241b6d;
+      }
+    }
+  }
+}
