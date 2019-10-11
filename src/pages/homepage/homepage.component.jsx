@@ -7,9 +7,6 @@ const HomePage = () => {
     <div className='homepage-wrapper'>
       <Showcase />
       <SectionSponsors></SectionSponsors>
-      <SectionSponsors></SectionSponsors>
-      <SectionSponsors></SectionSponsors>
-      <SectionSponsors></SectionSponsors>
     </div>
   );
 };
