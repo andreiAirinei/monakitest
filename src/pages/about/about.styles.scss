@@ -1,0 +1,69 @@
+.about {
+  &::after {
+    content: '';
+    position: absolute;
+    width: 2000px;
+    border-bottom: 1px solid lightgray;
+  }
+
+  &-wrapp {
+    margin: 0 auto;
+    max-width: 1080px;
+    padding: 0 40px 40px 40px;
+    position: relative;
+
+    .title {
+      text-align: center;
+      font-size: 30px;
+      font-weight: 600;
+      color: #4d4e53;
+      margin: 30px 0 80px 0;
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        width: 50px;
+        height: 1px;
+        background-color: lightgray;
+        bottom: -20px;
+        left: 48%;
+      }
+    }
+
+    p {
+      margin-top: 30px;
+    }
+
+    .about-flex {
+      max-width: 1028px;
+      display: flex;
+      flex-direction: row;
+      height: 400px;
+
+      .info {
+        width: 50%;
+        padding-right: 10px;
+
+        a {
+          color: #ff7e00;
+          border-bottom: 1px solid #ff7e00;
+
+          &:hover {
+            color: #000;
+            border-bottom: 1px solid #000;
+          }
+        }
+
+        > :last-child {
+          font-style: italic;
+        }
+      }
+
+      .gmap {
+        width: 50%;
+        background: lightcoral;
+      }
+    }
+  }
+}

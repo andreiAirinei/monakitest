@@ -52,11 +52,7 @@ const Footer = () => {
               releases.
             </p>
             <form>
-              <input
-                type='email'
-                name='email'
-                placeholder='Enter your email address'
-              />
+              <input type='email' placeholder='Enter your email address' />
               <button type='submit'>Subscribe</button>
             </form>
           </div>

@@ -1,0 +1,120 @@
+.contact {
+  &::after {
+    content: '';
+    position: absolute;
+    width: 2000px;
+    border-bottom: 1px solid lightgray;
+  }
+
+  &-wrapp {
+    margin: 0 auto;
+    max-width: 1080px;
+    padding: 0 40px 40px 40px;
+    position: relative;
+
+    .title {
+      text-align: center;
+      font-size: 30px;
+      font-weight: 600;
+      color: #4d4e53;
+      margin: 30px 0 80px 0;
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        width: 50px;
+        height: 1px;
+        background-color: lightgray;
+        bottom: -20px;
+        left: 48%;
+      }
+    }
+
+    p {
+      margin-top: 30px;
+    }
+
+    .form-grid {
+      margin-top: 10px;
+      width: 100%;
+      display: grid;
+      gap: 10px;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas:
+        'a b'
+        'c c'
+        'd d'
+        'e e';
+
+      :first-child {
+        grid-area: a;
+      }
+
+      :nth-child(2) {
+        grid-area: b;
+      }
+
+      :nth-child(3) {
+        grid-area: c;
+      }
+
+      :nth-child(4) {
+        grid-area: d;
+      }
+
+      :last-child {
+        grid-area: e;
+      }
+
+      input,
+      textarea {
+        padding: 12px 14px;
+        border: none;
+        resize: none;
+        font-family: inherit;
+        font-size: 16px;
+        background-color: #f6f6f6;
+        // margin-bottom: 10px;
+
+        &::placeholder {
+          color: #acacad;
+          font-style: italic;
+          font-size: 18px;
+        }
+      }
+
+      textarea {
+        height: 300px;
+      }
+
+      button {
+        float: right;
+        padding: 12px 20px;
+        font-weight: 600;
+        font-size: 13px;
+        font-family: 'Raleway', sans-serif;
+        letter-spacing: 0.1em;
+        background-color: #140f3c;
+        border: 0;
+        color: #fff;
+        transition: all 0.2s ease-out;
+
+        &:hover {
+          cursor: pointer;
+          background-color: #241b6d;
+        }
+      }
+    }
+
+    a {
+      color: #ff7e00;
+      border-bottom: 1px solid #ff7e00;
+
+      &:hover {
+        color: #000;
+        border-bottom: 1px solid #000;
+      }
+    }
+  }
+}

@@ -5,8 +5,8 @@
   border-bottom: 1px solid lightgray;
   padding-bottom: 50px;
 
-  .container {
-    width: 1100px;
+  &-container {
+    max-width: 1050px;
   }
 
   .title {
