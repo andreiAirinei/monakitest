@@ -3,7 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import './footer.styles.scss';
-// import { ReactComponent as ShoppingIcon } from './shopping-cart.svg';
+
 import { ReactComponent as AmexIcon } from './footer-assets/amex.svg';
 import { ReactComponent as AppleIcon } from './footer-assets/apple.svg';
 import { ReactComponent as GoogleIcon } from './footer-assets/google.svg';
@@ -30,7 +30,9 @@ const Footer = () => {
             </p>
             <br />
             <p>Have a question? Contact us</p>
-            <span role='img'>⭐️⭐️⭐️⭐️⭐️(10,321 Reviews)</span>
+            <span role='img' aria-label='Review Stars'>
+              ⭐️⭐️⭐️⭐️⭐️(10,321 Reviews)
+            </span>
           </div>
           <div>
             <span className='title'>About</span>
@@ -73,29 +75,45 @@ const Footer = () => {
           <div>
             <ul className='payments-list'>
               <li>
-                <AmexIcon></AmexIcon>
+                <span>
+                  <AmexIcon></AmexIcon>
+                </span>
               </li>
               <li>
-                <GoogleIcon></GoogleIcon>
+                <span>
+                  <GoogleIcon></GoogleIcon>
+                </span>
               </li>
               <li>
-                <MaestroIcon></MaestroIcon>
+                <span>
+                  <MaestroIcon></MaestroIcon>
+                </span>
               </li>
               <li>
-                <MastercardIcon></MastercardIcon>
+                <span>
+                  <MastercardIcon></MastercardIcon>
+                </span>
               </li>
 
               <li>
-                <Shoppify></Shoppify>
+                <span>
+                  <Shoppify></Shoppify>
+                </span>
               </li>
               <li>
-                <VisaIcon></VisaIcon>
+                <span>
+                  <VisaIcon></VisaIcon>
+                </span>
               </li>
               <li>
-                <AppleIcon></AppleIcon>
+                <span>
+                  <AppleIcon></AppleIcon>
+                </span>
               </li>
               <li>
-                <PaypalIcon></PaypalIcon>
+                <span>
+                  <PaypalIcon></PaypalIcon>
+                </span>
               </li>
             </ul>
           </div>

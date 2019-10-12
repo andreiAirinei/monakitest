@@ -1,12 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
-import { ReactComponent as ShoppingIcon } from './shopping-cart.svg';
+import CartIcon from '../cart-icon/cart-icon.component';
 
 import './header.styles.scss';
 
 const Header = () => {
+  // SCROLL TO TOP FUNCTION
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   return (
     <div className='header-wrapper'>
       <div className='banner'>
@@ -39,7 +46,10 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <ShoppingIcon className='cart-icon'></ShoppingIcon>
+              <Link to='/cart'>
+                {' '}
+                <CartIcon></CartIcon>
+              </Link>
             </li>
           </ul>
         </div>

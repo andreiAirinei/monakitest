@@ -1,0 +1,54 @@
+.cart {
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    border-bottom: 1px solid lightgray;
+    overflow: hidden !important;
+  }
+
+  &-wrapp {
+    margin: 0 auto;
+    max-width: 1310px;
+    padding: 0 40px 40px 40px;
+    position: relative;
+
+    .title {
+      text-align: center;
+      font-size: 30px;
+      font-weight: 600;
+      color: #4d4e53;
+      margin: 30px 0 80px 0;
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        width: 50px;
+        height: 1px;
+        background-color: lightgray;
+        bottom: -20px;
+        left: 48%;
+      }
+    }
+
+    p {
+      margin-bottom: 15px;
+    }
+
+    span {
+      font-weight: 600;
+    }
+
+    .empty-cart {
+      text-align: center;
+      a {
+        color: #213793;
+      }
+    }
+  }
+}
+
+.pt-30 {
+  padding-top: 30px;
+}

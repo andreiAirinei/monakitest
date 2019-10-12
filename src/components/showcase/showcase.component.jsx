@@ -1,4 +1,7 @@
 import React from 'react';
+
+import { Link } from 'react-router-dom';
+
 import './showcase.styles.scss';
 
 const Showcase = () => {
@@ -14,9 +17,12 @@ const Showcase = () => {
             <span className='showcase-body title'>
               {'Monaki Home® Ionic Gold'}
             </span>
-            <a href='#' className='shop-now-btn title'>
+            <Link to='/products' className='shop-now-btn title'>
               {'>> SHOP NOW >>'}
-            </a>
+            </Link>
+            {/* <a href='#!' > */}
+
+            {/* </a> */}
           </div>
         </div>
       </div>
