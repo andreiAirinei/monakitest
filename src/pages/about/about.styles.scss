@@ -2,8 +2,9 @@
   &::after {
     content: '';
     position: absolute;
-    width: 2000px;
+    width: 100%;
     border-bottom: 1px solid lightgray;
+    overflow: hidden !important;
   }
 
   &-wrapp {
@@ -62,7 +63,8 @@
 
       .gmap {
         width: 50%;
-        background: lightcoral;
+        height: 400px;
+        // background: lightcoral;
       }
     }
   }

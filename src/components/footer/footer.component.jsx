@@ -1,16 +1,20 @@
 import React from 'react';
 import './footer.styles.scss';
 // import { ReactComponent as ShoppingIcon } from './shopping-cart.svg';
-import { ReactComponent as AmexIcon } from './amex.svg';
-import { ReactComponent as AppleIcon } from './apple.svg';
-import { ReactComponent as GoogleIcon } from './google.svg';
-import { ReactComponent as MaestroIcon } from './maestro.svg';
-import { ReactComponent as MastercardIcon } from './mastercard.svg';
-import { ReactComponent as PaypalIcon } from './paypal.svg';
-import { ReactComponent as Shoppify } from './shopify.svg';
-import { ReactComponent as VisaIcon } from './visa.svg';
+import { ReactComponent as AmexIcon } from './footer-assets/amex.svg';
+import { ReactComponent as AppleIcon } from './footer-assets/apple.svg';
+import { ReactComponent as GoogleIcon } from './footer-assets/google.svg';
+import { ReactComponent as MaestroIcon } from './footer-assets/maestro.svg';
+import { ReactComponent as MastercardIcon } from './footer-assets/mastercard.svg';
+import { ReactComponent as PaypalIcon } from './footer-assets/paypal.svg';
+import { ReactComponent as Shoppify } from './footer-assets/shopify.svg';
+import { ReactComponent as VisaIcon } from './footer-assets/visa.svg';
 
 const Footer = () => {
+  const handleSubmit = e => {
+    e.preventDefault();
+  };
+
   return (
     <div className='footer'>
       <div className='container'>
@@ -53,13 +57,15 @@ const Footer = () => {
             </p>
             <form>
               <input type='email' placeholder='Enter your email address' />
-              <button type='submit'>Subscribe</button>
+              <button type='submit' onClick={handleSubmit}>
+                Subscribe
+              </button>
             </form>
           </div>
         </div>
         <div className='footer-bottom'>
           <div>
-            <a href=''>© Monaki Home®</a>
+            <a href='/'>© Monaki Home®</a>
           </div>
           <div>
             <ul className='payments-list'>

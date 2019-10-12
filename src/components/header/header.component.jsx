@@ -1,9 +1,18 @@
 import React from 'react';
+
+import { Link } from 'react-router-dom';
+
 import { ReactComponent as ShoppingIcon } from './shopping-cart.svg';
 
 import './header.styles.scss';
 
-const Header = () => {
+const Header = props => {
+  const handleClick = e => {
+    e.preventDefault();
+    console.log('wtf');
+    props.history.push('/');
+  };
+
   return (
     <div className='header-wrapper'>
       <div className='banner'>
@@ -11,21 +20,29 @@ const Header = () => {
       </div>
       <div className='navbar container'>
         <div className='logo'>
-          <img
-            src='//cdn.shopify.com/s/files/1/0037/8745/6612/files/monaki-logo_150x.png?v=1544692591'
-            alt='Monaki Home Logo'
-          />
+          <Link to='/'>
+            <img
+              src='//cdn.shopify.com/s/files/1/0037/8745/6612/files/monaki-logo_150x.png?v=1544692591'
+              alt='Monaki Home Logo'
+            />
+          </Link>
         </div>
         <div>
           <ul className='title'>
             <li>
-              <a href='#'>FAQ & Shipping</a>
+              <Link to='/faq-shipping' className='btn'>
+                FAQ & Shipping
+              </Link>
             </li>
             <li>
-              <a href='#'>About us</a>
+              <Link to='/about' className='btn'>
+                About us
+              </Link>
             </li>
             <li>
-              <a href='#'>Contact</a>
+              <Link to='/contact' className='btn'>
+                Contact
+              </Link>
             </li>
             <li>
               <ShoppingIcon className='cart-icon'></ShoppingIcon>

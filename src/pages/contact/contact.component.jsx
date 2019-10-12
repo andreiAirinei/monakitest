@@ -1,7 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './contact.styles.scss';
 
 const ContactPage = () => {
+  const handleSubmit = e => {
+    e.preventDefault();
+  };
+
   return (
     <div className='contact'>
       <div className='contact-wrapp'>
@@ -11,7 +16,7 @@ const ContactPage = () => {
         <p>
           If you have any questions, feel free to contact us using the form
           below. Have shipping related questions? You may find your answer{' '}
-          <a href=''>there</a>.
+          <Link to='/faq-shipping'>there</Link>.
         </p>
         <p>Our operating hours are 09:00 – 17:00 (5PM) CEST.</p>
         <p>Our support is also available at info@monaki.co.</p>
@@ -22,7 +27,9 @@ const ContactPage = () => {
             <input type='text' placeholder='Phone Number' />
             <textarea placeholder='Message'></textarea>
             <div>
-              <button type='submit'>Send</button>
+              <button type='submit' onClick={handleSubmit}>
+                Send
+              </button>
             </div>
           </div>
         </form>
