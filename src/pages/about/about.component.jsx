@@ -29,7 +29,9 @@ const AboutPage = () => {
             </p>
             <p>Team Monaki</p>
           </div>
-          <div className='gmap'>{/* <GoogleMaps></GoogleMaps> */}</div>
+          <div className='gmap'>
+            <GoogleMaps></GoogleMaps>
+          </div>
         </div>
       </div>
     </div>

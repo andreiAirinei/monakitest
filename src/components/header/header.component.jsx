@@ -6,13 +6,7 @@ import { ReactComponent as ShoppingIcon } from './shopping-cart.svg';
 
 import './header.styles.scss';
 
-const Header = props => {
-  const handleClick = e => {
-    e.preventDefault();
-    console.log('wtf');
-    props.history.push('/');
-  };
-
+const Header = () => {
   return (
     <div className='header-wrapper'>
       <div className='banner'>

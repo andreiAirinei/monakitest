@@ -1,4 +1,7 @@
 import React from 'react';
+
+import { Link } from 'react-router-dom';
+
 import './footer.styles.scss';
 // import { ReactComponent as ShoppingIcon } from './shopping-cart.svg';
 import { ReactComponent as AmexIcon } from './footer-assets/amex.svg';
@@ -33,19 +36,19 @@ const Footer = () => {
             <span className='title'>About</span>
             <ul>
               <li>
-                <a href=''>About us</a>
+                <Link to='/about'>About us</Link>
               </li>
               <li>
-                <a href=''>Contact</a>
+                <Link to='/contact'>Contact</Link>
               </li>
               <li>
-                <a href=''>FAQ & Shipping</a>
+                <Link to='/faq-shipping'>FAQ & Shipping</Link>
               </li>
               <li>
-                <a href=''>Terms and Conditions</a>
+                <Link to='/terms-conditions'>Terms and Conditions</Link>
               </li>
               <li>
-                <a href=''>Privacy Policy</a>
+                <Link to='/privacy-policy'>Privacy Policy</Link>
               </li>
             </ul>
           </div>

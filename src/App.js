@@ -7,6 +7,8 @@ import HomePage from './pages/homepage/homepage.component';
 import FaqShippingPage from './pages/faq-shipping/faq-shipping.component';
 import ContactPage from './pages/contact/contact.component';
 import AboutPage from './pages/about/about.component';
+import TermsConditions from './pages/terms-conditions/terms-conditions.component';
+import PrivacyPolicy from './pages/privacy-policy/privacy-policy.component';
 import Footer from './components/footer/footer.component';
 
 import './App.css';
@@ -28,6 +30,12 @@ function App() {
         <Route exact path='/faq-shipping' component={FaqShippingPage}></Route>
         <Route exact path='/about' component={AboutPage}></Route>
         <Route exact path='/contact' component={ContactPage}></Route>
+        <Route
+          exact
+          path='/terms-conditions'
+          component={TermsConditions}
+        ></Route>
+        <Route exact path='/privacy-policy' component={PrivacyPolicy}></Route>
       </Switch>
       <Footer></Footer>
     </div>

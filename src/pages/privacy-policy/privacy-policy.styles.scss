@@ -1,4 +1,4 @@
-.about {
+.privacy-policy {
   &::after {
     content: '';
     position: absolute;
@@ -33,39 +33,19 @@
     }
 
     p {
-      margin-top: 30px;
+      margin-bottom: 25px;
+
+      &:first-child {
+        margin-bottom: 0px;
+      }
     }
 
-    .about-flex {
-      max-width: 1028px;
-      display: flex;
-      flex-direction: row;
-      height: 400px;
-
-      .info {
-        width: 50%;
-        padding-right: 10px;
-
-        a {
-          color: #ff7e00;
-          border-bottom: 1px solid #ff7e00;
-
-          &:hover {
-            color: #000;
-            border-bottom: 1px solid #000;
-          }
-        }
-
-        > :last-child {
-          font-style: italic;
-        }
-      }
-
-      .gmap {
-        width: 50%;
-        height: 400px;
-        background: rgb(212, 212, 212);
-      }
+    span {
+      font-weight: 600;
     }
   }
+}
+
+.pt-30 {
+  padding-top: 30px;
 }
