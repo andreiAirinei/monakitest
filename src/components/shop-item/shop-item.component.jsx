@@ -8,11 +8,14 @@ const ShopItem = () => {
     <div className='shop-item'>
       <div className='shop-item-container'>
         <div className='product-image'>
-          <div className='product-image-bubble'>
+          <div className='product-image-container'>
             <img
               src='//cdn.shopify.com/s/files/1/0037/8745/6612/products/v-3178592__-1005623596.jpg?v=1559136177'
               alt='Showerhead'
             />
+            <div className='bubble'>
+              <div className='animated bounceInUp bubble-content'>70% OFF</div>
+            </div>
           </div>
         </div>
         <div className='product-details'>
@@ -59,7 +62,10 @@ const ShopItem = () => {
               reiciendis vero quidem."
             </div>
           </div>
-          <Link to='/cart' className='buy-now-btn button-fill-bottom flipInX'>
+          <Link
+            to='/cart'
+            className='buy-now-btn button-fill-bottom animated flipInX'
+          >
             BUY NOW
           </Link>
         </div>
