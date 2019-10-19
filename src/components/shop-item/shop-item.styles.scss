@@ -28,6 +28,16 @@
           width: 100px;
           top: 40%;
           right: -15%;
+          animation: scaleIn 1s;
+          // Without it, modal will close after it finishes scalling
+          animation-fill-mode: forwards;
+          transform: scale(0);
+
+          @keyframes scaleIn {
+            100% {
+              transform: scale(1);
+            }
+          }
 
           &-content {
             background-color: #161d3d;

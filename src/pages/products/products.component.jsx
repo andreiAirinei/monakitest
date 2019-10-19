@@ -13,9 +13,9 @@ const ProductsPage = () => {
     <div className='products'>
       <ProductsHeader></ProductsHeader>
       <ShopItem></ShopItem>
-      <ShopItem></ShopItem>
       <ProductVideo />
       <ProductAdvertisement></ProductAdvertisement>
+      <ShopItem></ShopItem>
       <ProductsFooter></ProductsFooter>
     </div>
   );

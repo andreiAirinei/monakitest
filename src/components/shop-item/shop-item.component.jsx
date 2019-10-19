@@ -24,7 +24,7 @@ const ShopItem = () => {
             Gold Ionic High-Pressure Showerhead
           </span>
           <span className='product-label'>#1 Best Seller</span>
-          <ul className='product-checks'>
+          <ul className='animated fadeIn product-checks'>
             <li>
               <img
                 src={require('../../assets/icon-checked.png')}
