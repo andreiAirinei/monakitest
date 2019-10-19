@@ -1,5 +1,4 @@
 import React from 'react';
-
 import { Route, Switch } from 'react-router-dom';
 
 import Header from './components/header/header.component';
@@ -22,7 +21,7 @@ class App extends React.Component {
     const prod = true;
 
     if (prod === true) {
-      return <ProductsPage></ProductsPage>;
+      return <ProductsPage />;
     } else {
       return (
         <div>

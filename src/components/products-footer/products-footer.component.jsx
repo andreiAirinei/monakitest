@@ -1,12 +1,11 @@
 import React from 'react';
-
 import { Link } from 'react-router-dom';
 
 import './products-footer.styles.scss';
 
 const ProductsFooter = () => {
   return (
-    <div className='products-footer'>
+    <div className='wow fadeIn products-footer'>
       <div className='products-footer-wrapper'>
         <div className='footer-left'>
           <div className='logo'>

@@ -10,11 +10,13 @@ const ShopItem = () => {
         <div className='product-image'>
           <div className='product-image-container'>
             <img
+              className='wow fadeIn'
+              data-wow-offset='100'
               src='//cdn.shopify.com/s/files/1/0037/8745/6612/products/v-3178592__-1005623596.jpg?v=1559136177'
               alt='Showerhead'
             />
             <div className='bubble'>
-              <div className='animated bounceInUp bubble-content'>70% OFF</div>
+              <div className='wow bounceInUp bubble-content'>70% OFF</div>
             </div>
           </div>
         </div>
@@ -24,7 +26,7 @@ const ShopItem = () => {
             Gold Ionic High-Pressure Showerhead
           </span>
           <span className='product-label'>#1 Best Seller</span>
-          <ul className='animated fadeIn product-checks'>
+          <ul className='wow fadeIn product-checks'>
             <li>
               <img
                 src={require('../../assets/icon-checked.png')}

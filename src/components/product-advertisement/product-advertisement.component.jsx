@@ -6,7 +6,7 @@ const ProductAdvertisement = () => {
   return (
     <div className='advertise'>
       <div className='advertise-container'>
-        <div className='advertise-text'>
+        <div className='wow fadeIn advertise-text'>
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta,
             velit voluptatibus! Voluptatem vel sapiente velit iure.
@@ -17,11 +17,11 @@ const ProductAdvertisement = () => {
             esse a rerum reprehenderit error tempore dolore magni! Rem sint.
           </p>
         </div>
-        <div className='advertise-image1'></div>
+        <div className='wow fadeInRight advertise-image1'></div>
       </div>
       <div className='advertise-container'>
-        <div className='advertise-image2'></div>
-        <div className='advertise-text text-high-italic'>
+        <div className='wow fadeInLeft advertise-image2'></div>
+        <div className='wow fadeIn advertise-text text-high-italic'>
           <ul>
             <li>
               <img

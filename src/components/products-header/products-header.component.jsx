@@ -5,8 +5,12 @@ import { Link } from 'react-router-dom';
 import './products-header.styles.scss';
 
 const ProductsHeader = () => {
+  // useEffect(() => {
+  //   return () => new WOW.WOW().init();
+  // }, []);
+
   return (
-    <div className='products-header'>
+    <div className='wow fadeIn products-header'>
       <div className='products-header-wrapper'>
         <div className='logo'>
           <Link to='/'>
@@ -29,7 +33,7 @@ const ProductsHeader = () => {
               alt='Commercials'
             />
           </div>
-          <div className='header-order-now'>
+          <div className='wow bounceIn header-order-now'>
             <Link to='/cart' className='header-btn button-fill-left'>
               ORDER NOW
             </Link>

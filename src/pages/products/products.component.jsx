@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect, useLayoutEffect } from 'react';
+import WOW from 'wowjs';
 
 import ProductsHeader from '../../components/products-header/products-header.component';
 import ShopItem from '../../components/shop-item/shop-item.component';
@@ -9,6 +10,12 @@ import ProductsFooter from '../../components/products-footer/products-footer.com
 import './products.styles.scss';
 
 const ProductsPage = () => {
+  // useLayoutEffect(() => {
+  //   new WOW.WOW({ live: false }).init();
+  //   return () => {};
+  // }, []);
+  // new WOW.WOW({ live: false }).init();
+  useEffect(() => new WOW.WOW().init(), []);
   return (
     <div className='products'>
       <ProductsHeader></ProductsHeader>

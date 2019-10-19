@@ -31,6 +31,7 @@
           animation: scaleIn 1s;
           // Without it, modal will close after it finishes scalling
           animation-fill-mode: forwards;
+
           transform: scale(0);
 
           @keyframes scaleIn {
@@ -46,7 +47,6 @@
             font-size: 25px;
             padding: 22px 30px;
             line-height: 30px;
-            transform: translateX(50%);
           }
         }
       }
