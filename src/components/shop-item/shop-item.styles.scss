@@ -39,19 +39,6 @@
             transform: translateX(50%);
           }
         }
-
-        // &::after {
-        //   content: '70% OFF';
-        //   position: absolute;
-        //   height: 100px;
-        //   width: 100px;
-        //   background-color: #161d3d;
-        //   border-radius: 50%;
-        //   color: #fff;
-        //   font-size: 25px;
-        //   top: 40%;
-        //   padding: 22px 30px;
-        //   line-height: 30px;
       }
     }
 
@@ -112,8 +99,8 @@
           width: 100%;
           height: 100%;
           background-color: #ff8100;
-          opacity: 0.05;
-          border-radius: 5px;
+          opacity: 0.1;
+          border-radius: 7px;
         }
 
         &-image {
