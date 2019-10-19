@@ -5,7 +5,12 @@ import './product-video.styles.scss';
 const ProductVideo = () => {
   return (
     <div className='video'>
-      <h1>Video</h1>
+      <iframe
+        src='https://www.youtube.com/embed/AM6pR9zLB9A?controls=0'
+        frameborder='0'
+        allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture'
+        allowfullscreen
+      ></iframe>
     </div>
   );
 };
