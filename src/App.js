@@ -18,40 +18,27 @@ import './App.css';
 
 class App extends React.Component {
   render() {
-    const prod = true;
-
-    if (prod === true) {
-      return <ProductsPage />;
-    } else {
-      return (
-        <div>
-          <Header></Header>
-          {/* The moment that a route inside of it finds a match in the path, it does not render anything else BUT that route */}
-          <Switch>
-            <Route exact path='/' component={HomePage}></Route>
-            <Route
-              exact
-              path='/faq-shipping'
-              component={FaqShippingPage}
-            ></Route>
-            <Route exact path='/about' component={AboutPage}></Route>
-            <Route exact path='/contact' component={ContactPage}></Route>
-            <Route exact path='/cart' component={Cart}></Route>
-            <Route
-              exact
-              path='/terms-conditions'
-              component={TermsConditions}
-            ></Route>
-            <Route
-              exact
-              path='/privacy-policy'
-              component={PrivacyPolicy}
-            ></Route>
-          </Switch>
-          <Footer></Footer>
-        </div>
-      );
-    }
+    return (
+      <div>
+        <Header></Header>
+        {/* The moment that a route inside of it finds a match in the path, it does not render anything else BUT that route */}
+        <Switch>
+          <Route exact path='/' component={HomePage}></Route>
+          <Route exact path='/products' component={ProductsPage}></Route>
+          <Route exact path='/faq-shipping' component={FaqShippingPage}></Route>
+          <Route exact path='/about' component={AboutPage}></Route>
+          <Route exact path='/contact' component={ContactPage}></Route>
+          <Route exact path='/cart' component={Cart}></Route>
+          <Route
+            exact
+            path='/terms-conditions'
+            component={TermsConditions}
+          ></Route>
+          <Route exact path='/privacy-policy' component={PrivacyPolicy}></Route>
+        </Switch>
+        <Footer></Footer>
+      </div>
+    );
   }
 }
 

@@ -9,23 +9,31 @@ import ProductsFooter from '../../components/products-footer/products-footer.com
 
 import './products.styles.scss';
 
-const ProductsPage = () => {
+class ProductsPage extends React.Component {
   // useLayoutEffect(() => {
   //   new WOW.WOW({ live: false }).init();
-  //   return () => {};
+  //   return () => {
+  //     console.log('ProductPage unmounted');
+  //   };
   // }, []);
-  // new WOW.WOW({ live: false }).init();
-  useEffect(() => new WOW.WOW().init(), []);
-  return (
-    <div className='products'>
-      <ProductsHeader></ProductsHeader>
-      <ShopItem></ShopItem>
-      <ProductVideo />
-      <ProductAdvertisement></ProductAdvertisement>
-      <ShopItem></ShopItem>
-      <ProductsFooter></ProductsFooter>
-    </div>
-  );
-};
+  // useEffect(() => new WOW.WOW().init(), []);
+
+  componentDidMount() {
+    new WOW.WOW({ live: false }).init();
+  }
+
+  render() {
+    return (
+      <div className='products'>
+        <ProductsHeader></ProductsHeader>
+        <ShopItem></ShopItem>
+        <ProductVideo />
+        <ProductAdvertisement></ProductAdvertisement>
+        <ShopItem></ShopItem>
+        <ProductsFooter></ProductsFooter>
+      </div>
+    );
+  }
+}
 
 export default ProductsPage;

@@ -8,7 +8,7 @@ const Showcase = () => {
   return (
     <div className='showcase'>
       <div className='showcase-wrapper'>
-        <img src={require('./showerhead.jpg')} alt='Showerhead' />
+        <img src={require('../../assets/showerhead.jpg')} alt='Showerhead' />
         <div className='showcase-content'>
           <div className='container'>
             <span className='showcase-title title'>
