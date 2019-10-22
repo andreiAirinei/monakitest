@@ -1,10 +1,14 @@
-import React from 'react';
+import React, { useContext } from 'react';
+// CONTEXTS
+import HeaderContext from '../../contexts/header/header.context';
 
 import { Link } from 'react-router-dom';
 
 import './showcase.styles.scss';
 
 const Showcase = () => {
+  const { toggleHidden } = useContext(HeaderContext);
+
   return (
     <div className='showcase'>
       <div className='showcase-wrapper'>
@@ -17,7 +21,11 @@ const Showcase = () => {
             <span className='showcase-body title'>
               {'Monaki Home® Ionic Gold'}
             </span>
-            <Link to='/products' className='shop-now-btn title'>
+            <Link
+              to='/products'
+              className='shop-now-btn title'
+              onClick={toggleHidden}
+            >
               {'>> SHOP NOW >>'}
             </Link>
             {/* <a href='#!' > */}

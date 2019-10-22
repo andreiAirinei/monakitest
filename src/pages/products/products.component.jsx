@@ -1,4 +1,7 @@
 import React, { useEffect, useLayoutEffect } from 'react';
+// CONTEXTS
+import HeaderContext from '../../contexts/header/header.context';
+
 import WOW from 'wowjs';
 
 import ProductsHeader from '../../components/products-header/products-header.component';
@@ -18,8 +21,14 @@ class ProductsPage extends React.Component {
   // }, []);
   // useEffect(() => new WOW.WOW().init(), []);
 
+  static contextType = HeaderContext;
+
   componentDidMount() {
     new WOW.WOW({ live: false }).init();
+  }
+
+  componentWillUnmount() {
+    this.context.toggleHidden();
   }
 
   render() {
